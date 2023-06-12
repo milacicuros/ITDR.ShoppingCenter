@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{BD93DB66-5866-468F-B0FA-76752366C962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDR.ShoppingCenter.Web", "ITDR.ShoppingCenter.Web\ITDR.ShoppingCenter.Web.csproj", "{6E8CCA64-AA2A-449D-AB3C-72FFE8EDEAB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{72DA79CB-6A50-4E4A-BB2E-B518EEBB6C84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDR.ShoppingCenter.Services.ProductAPI", "ITDR.ShoppingCenter.Services.ProductAPI\ITDR.ShoppingCenter.Services.ProductAPI.csproj", "{F919595E-DA07-4EA1-BCD0-E641E41CC04F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E8CCA64-AA2A-449D-AB3C-72FFE8EDEAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8CCA64-AA2A-449D-AB3C-72FFE8EDEAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8CCA64-AA2A-449D-AB3C-72FFE8EDEAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8CCA64-AA2A-449D-AB3C-72FFE8EDEAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F919595E-DA07-4EA1-BCD0-E641E41CC04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F919595E-DA07-4EA1-BCD0-E641E41CC04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F919595E-DA07-4EA1-BCD0-E641E41CC04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F919595E-DA07-4EA1-BCD0-E641E41CC04F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E8CCA64-AA2A-449D-AB3C-72FFE8EDEAB9} = {BD93DB66-5866-468F-B0FA-76752366C962}
+		{F919595E-DA07-4EA1-BCD0-E641E41CC04F} = {72DA79CB-6A50-4E4A-BB2E-B518EEBB6C84}
+	EndGlobalSection
+EndGlobal
