@@ -51,6 +51,44 @@ namespace ITDR.ShoppingCenter.Services.ProductAPI.Migrations
                     b.HasKey("ProductId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            CategoryName = "Misterije",
+                            Description = "Upravljanje karakterom i pokusaj da se nadje izlaz iz lavirinta.",
+                            ImageURL = "https://localhost:7279/images/glow-in-the-dark.jpg",
+                            Name = "Glow In The Dark",
+                            Price = 750.0
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            CategoryName = "Akcija, Ratne",
+                            Description = "Call Of Duty MWII je najprodavanija ratna igrica u kojoj se resavaju misije iz doba 2010.",
+                            ImageURL = "https://localhost:7279/images/cod-mw-2.jpg",
+                            Name = "Call Of Duty - Modern Warfare II",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            CategoryName = "Akcija",
+                            Description = "U ulozi Kratosa prelazite teske misije.",
+                            ImageURL = "https://localhost:7279/images/god-of-war.jpg",
+                            Name = "God Of War",
+                            Price = 1100.0
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            CategoryName = "Akcija, Misterija",
+                            Description = "Witcher, bestseler!",
+                            ImageURL = "https://localhost:7279/images/witcher.jpg",
+                            Name = "Witcher",
+                            Price = 1350.0
+                        });
                 });
 #pragma warning restore 612, 618
         }

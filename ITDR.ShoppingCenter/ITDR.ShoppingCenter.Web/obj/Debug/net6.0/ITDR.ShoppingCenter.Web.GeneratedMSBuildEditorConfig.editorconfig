@@ -11,9 +11,13 @@ build_property.RootNamespace = ITDR.ShoppingCenter.Web
 build_property.ProjectDir = C:\Users\Uros\RiderProjects\ITDR.ShoppingCenter\ITDR.ShoppingCenter.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Uros\RiderProjects\ITDR.ShoppingCenter\ITDR.ShoppingCenter.Web
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
@@ -23,8 +27,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/CartIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENhcnRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/ProductCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3RDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/ProductDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3REZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/ProductEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3RFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/ProductIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3RJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Uros/RiderProjects/ITDR.ShoppingCenter/ITDR.ShoppingCenter.Web/Views/Shared/_ValidationScriptsPartial.cshtml]

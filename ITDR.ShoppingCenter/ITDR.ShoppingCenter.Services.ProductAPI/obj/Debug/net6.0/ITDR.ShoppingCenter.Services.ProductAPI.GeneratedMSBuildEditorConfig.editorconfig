@@ -11,6 +11,6 @@ build_property.RootNamespace = ITDR.ShoppingCenter.Services.ProductAPI
 build_property.ProjectDir = C:\Users\Uros\RiderProjects\ITDR.ShoppingCenter\ITDR.ShoppingCenter.Services.ProductAPI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Uros\RiderProjects\ITDR.ShoppingCenter\ITDR.ShoppingCenter.Services.ProductAPI
 build_property._RazorSourceGeneratorDebug = 
