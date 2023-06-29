@@ -22,6 +22,42 @@ public class CartController : Controller
         return View(await LoadCartDTOBasedOnLoggedInUser());
     }
     
+    [HttpPost]
+    [ActionName("ApplyCoupon")]
+    public async Task<IActionResult> ApplyCoupon(CartDTO cartDTO)
+    {
+        var userId = User.Claims
+            .Where(claim => claim.Type == "sub")?
+            .FirstOrDefault()?.Value;
+        var accessToken = await HttpContext.GetTokenAsync("access_token");
+        var response = await _cartService.ApplyCouponAsync<ResponseDTO>(cartDTO, accessToken);
+        
+        if (response != null && response.IsSuccess)
+        {
+            return RedirectToAction(nameof(CartIndex));
+        }
+
+        return Problem(); //treba View()
+    }
+    
+    [HttpPost]
+    [ActionName("RemoveCoupon")]
+    public async Task<IActionResult> RemoveCoupon(CartDTO cartDTO)
+    {
+        var userId = User.Claims
+            .Where(claim => claim.Type == "sub")?
+            .FirstOrDefault()?.Value;
+        var accessToken = await HttpContext.GetTokenAsync("access_token");
+        var response = await _cartService.RemoveCouponAsync<ResponseDTO>(cartDTO.CartHeader.UserId, accessToken);
+        
+        if (response != null && response.IsSuccess)
+        {
+            return RedirectToAction(nameof(CartIndex));
+        }
+
+        return Problem(); //treba View()
+    }
+    
     public async Task<IActionResult> Remove(int cartDetailsId)
     {
         var userId = User.Claims
@@ -35,7 +71,7 @@ public class CartController : Controller
             return RedirectToAction(nameof(CartIndex));
         }
 
-        return NoContent(); // treba View();
+        return Problem(); // treba View();
     }
     
     public async Task<IActionResult> Checkout()

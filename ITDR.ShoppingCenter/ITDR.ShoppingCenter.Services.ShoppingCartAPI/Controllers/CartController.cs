@@ -84,4 +84,39 @@ public class CartController : Controller
 
         return _response;
     }
+    
+    [HttpPost("ApplyCoupon")]
+    public async Task<object> ApplyCoupon([FromBody] CartDTO cartDTO)
+    {
+        try
+        {
+            bool isSuccess = await _cartRepository.ApplyCoupon(cartDTO.CartHeader.UserId, 
+                cartDTO.CartHeader.CouponCode);
+            _response.Result = isSuccess;
+        }
+        catch (Exception e)
+        {
+            _response.IsSuccess = false;
+            _response.ErrorMessage = new List<string>() { e.ToString() };
+        }
+
+        return _response;
+    }
+    
+    [HttpPost("RemoveCoupon")]
+    public async Task<object> RemoveCoupon([FromBody] string userId)
+    {
+        try
+        {
+            bool isSuccess = await _cartRepository.RemoveCoupon(userId);
+            _response.Result = isSuccess;
+        }
+        catch (Exception e)
+        {
+            _response.IsSuccess = false;
+            _response.ErrorMessage = new List<string>() { e.ToString() };
+        }
+
+        return _response;
+    }
 }
