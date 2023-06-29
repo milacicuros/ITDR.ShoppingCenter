@@ -10,11 +10,14 @@ public class CartController : Controller
 {
     private readonly IProductService _productService;
     private readonly ICartService _cartService;
+    private readonly ICouponService _couponService;
 
-    public CartController(IProductService productService, ICartService cartService)
+    public CartController(IProductService productService, 
+        ICartService cartService, ICouponService couponService)
     {
         _productService = productService;
         _cartService = cartService;
+        _couponService = couponService;
     }
     
     public async Task<IActionResult> CartIndex()
@@ -74,9 +77,10 @@ public class CartController : Controller
         return Problem(); // treba View();
     }
     
+    [HttpGet]
     public async Task<IActionResult> Checkout()
     {
-        return NoContent();
+        return View(await LoadCartDTOBasedOnLoggedInUser());
     }
 
     private async Task<CartDTO> LoadCartDTOBasedOnLoggedInUser()
@@ -95,10 +99,23 @@ public class CartController : Controller
 
         if (cartDTO.CartHeader != null)
         {
+            if (!string.IsNullOrEmpty(cartDTO.CartHeader.CouponCode))
+            {
+                var coupon = await _couponService
+                    .GetCouponAsync<ResponseDTO>(cartDTO.CartHeader.CouponCode, accessToken);
+                if (coupon != null && coupon.IsSuccess)
+                {
+                    var couponDTO = JsonConvert.DeserializeObject<CouponDTO>(Convert.ToString(coupon.Result));
+                    cartDTO.CartHeader.DiscountTotal = couponDTO.DiscountAmount;
+                }
+            }
+            
             foreach (var detail in cartDTO.CartDetails)
             {
                 cartDTO.CartHeader.OrderTotal += (detail.Product.Price * detail.Count);
             }
+
+            cartDTO.CartHeader.OrderTotal -= cartDTO.CartHeader.DiscountTotal;
         }
 
         return cartDTO;

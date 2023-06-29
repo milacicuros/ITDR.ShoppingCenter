@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XoQukWttT4vOHo1gR9j8PVTItODpt9iVMCyc7l5Uaaw=",
+  "Hash": "gw25b1Vm0iF0rUirHDSSB9baLLfPQISWvjS7+30Mezw=",
   "Source": "ITDR.ShoppingCenter.Web",
   "BasePath": "_content/ITDR.ShoppingCenter.Web",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Uros\\RiderProjects\\ITDR.ShoppingCenter\\ITDR.ShoppingCenter.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ITDR.ShoppingCenter.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Uros\\RiderProjects\\ITDR.ShoppingCenter\\ITDR.ShoppingCenter.Web\\wwwroot\\css\\bootstrap-datetimepicker.css",
+      "SourceId": "ITDR.ShoppingCenter.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uros\\RiderProjects\\ITDR.ShoppingCenter\\ITDR.ShoppingCenter.Web\\wwwroot\\",
+      "BasePath": "_content/ITDR.ShoppingCenter.Web",
+      "RelativePath": "css/bootstrap-datetimepicker.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-datetimepicker.css"
     },
     {
       "Identity": "C:\\Users\\Uros\\RiderProjects\\ITDR.ShoppingCenter\\ITDR.ShoppingCenter.Web\\wwwroot\\css\\site.css",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\witcher.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Uros\\RiderProjects\\ITDR.ShoppingCenter\\ITDR.ShoppingCenter.Web\\wwwroot\\js\\bootstrap-datetimepicker.js",
+      "SourceId": "ITDR.ShoppingCenter.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uros\\RiderProjects\\ITDR.ShoppingCenter\\ITDR.ShoppingCenter.Web\\wwwroot\\",
+      "BasePath": "_content/ITDR.ShoppingCenter.Web",
+      "RelativePath": "js/bootstrap-datetimepicker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap-datetimepicker.js"
     },
     {
       "Identity": "C:\\Users\\Uros\\RiderProjects\\ITDR.ShoppingCenter\\ITDR.ShoppingCenter.Web\\wwwroot\\js\\site.js",
